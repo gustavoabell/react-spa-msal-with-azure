@@ -10,6 +10,8 @@ import "./styles/App.css";
 /**
  * Renders information about the signed-in user or a button to retrieve data about the user
  */
+ 
+
 const ProfileContent = () => {
     const { instance, accounts } = useMsal();
     const [graphData, setGraphData] = useState(null);
@@ -30,7 +32,7 @@ const ProfileContent = () => {
             {graphData ? 
                 <ProfileData graphData={graphData} />
                 :
-                <Button variant="secondary" onClick={RequestProfileData}>Solicitar informações de perfil</Button>
+                <Button variant="secondary" onClick={RequestProfileData}>Solicitar informações do perfil</Button>
             }
         </>
     );
@@ -48,6 +50,7 @@ const MainContent = () => {
 
             <UnauthenticatedTemplate>
                 <h5 className="card-title">Faça login para ver as informações do seu perfil.</h5>
+                {/* { isAuthenticated ? <Button variant="secondary" onClick={}> O Token ainda não foi chamado</Button> : <Button variant="secondary" onClick={}> O Token foi chamado</Button> } */}
             </UnauthenticatedTemplate>
         </div>
     );
