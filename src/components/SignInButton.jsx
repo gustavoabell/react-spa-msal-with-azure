@@ -9,22 +9,28 @@ import Dropdown from "react-bootstrap/esm/Dropdown";
  */
 export const SignInButton = () => {
     const { instance } = useMsal();
-
     const handleLogin = (loginType) => {
-        if (loginType === "popup") {
-            instance.loginPopup(loginRequest).catch(e => {
-                console.log(e);
-            });
-        } else if (loginType === "redirect") {
-            instance.loginRedirect(loginRequest).catch(e => {
-                console.log(e);
-            });
-        }
-    }
+        if (loginType === "redirect") {
+                  instance.loginRedirect(loginRequest).catch(e => {
+                         console.log(e);
+                     });
+                 }
+                }
+    // const handleLogin = (loginType) => {
+    //     if (loginType === "popup") {
+    //         instance.loginPopup(loginRequest).catch(e => {
+    //             console.log(e);
+    //         });
+    //     } else if (loginType === "redirect") {
+    //         instance.loginRedirect(loginRequest).catch(e => {
+    //             console.log(e);
+    //         });
+    //     }
+    // }
     return (
-        <DropdownButton variant="secondary" className="ml-auto" drop="left" title="Login">
-            <Dropdown.Item as="button" onClick={() => handleLogin("popup")}>Faça login usando pop-up</Dropdown.Item>
-            <Dropdown.Item as="button" onClick={() => handleLogin("redirect")}>Faça login usando o Redirecionamento</Dropdown.Item>
-        </DropdownButton>
+         <DropdownButton variant="secondary" className="ml-auto" drop="left" title="Login" onClick={() => handleLogin("redirect")}>
+          {/* <Dropdown.Item as="button" onClick={() => handleLogin("popup")}>Faça login usando pop-up</Dropdown.Item> */}
+            {/* <Dropdown.Item as="button" onClick={() => handleLogin("redirect")}>Faça login usando o Redirecionamento</Dropdown.Item> */}
+         </DropdownButton>
     )
 }
