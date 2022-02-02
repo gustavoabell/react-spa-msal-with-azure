@@ -22,9 +22,9 @@ export const SignInButton = () => {
         }
     }
     return (
-        <DropdownButton variant="secondary" className="ml-auto" drop="left" title="Sign In">
-            <Dropdown.Item as="button" onClick={() => handleLogin("popup")}>Sign in using Popup</Dropdown.Item>
-            <Dropdown.Item as="button" onClick={() => handleLogin("redirect")}>Sign in using Redirect</Dropdown.Item>
+        <DropdownButton variant="secondary" className="ml-auto" drop="left" title="Login">
+            <Dropdown.Item as="button" onClick={() => handleLogin("popup")}>Faça login usando pop-up</Dropdown.Item>
+            <Dropdown.Item as="button" onClick={() => handleLogin("redirect")}>Faça login usando o Redirecionamento</Dropdown.Item>
         </DropdownButton>
     )
 }
