@@ -9,8 +9,8 @@ import Navbar from "react-bootstrap/Navbar";
 import { useIsAuthenticated } from "@azure/msal-react";
 import { SignInButton } from "./SignInButton";
 import { SignOutButton } from "./SignOutButton";
-import { TokenExiste } from "./TokenExiste";
-import { TokenNãoExiste } from "./TokenNãoExiste";
+import { TokenExists } from "./TokenExists";
+import { TokenNotExists } from "./TokenNotExists";
 
 
 /**
@@ -34,7 +34,7 @@ export const PageLayout = (props) => {
             <br />
             {props.children}
             <p>
-                <center> {isAuthenticated ? <TokenExiste />   : <TokenNãoExiste />}</center>
+                <center> {isAuthenticated ? <TokenExists />   : <TokenNotExists />}</center>
                     <br />
             </p>
         </>

@@ -7,7 +7,7 @@ import Dropdown from "react-bootstrap/esm/Dropdown";
 /**
  * Renders a sign-out button
  */
-export const TokenExiste = () => {
+export const TokenExists = () => {
     
     function handleSubmit(e) {
         e.preventDefault();

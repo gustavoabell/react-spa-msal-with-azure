@@ -33,6 +33,7 @@ const ProfileContent = () => {
                 <ProfileData graphData={graphData} />
                 :
                 <Button variant="secondary" onClick={RequestProfileData}>Solicitar informações do perfil</Button>
+                
             }
         </>
     );
