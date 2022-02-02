@@ -42,7 +42,7 @@ This sample demonstrates the following MSAL React concepts:
 ### Setup
 
 1. [Register a new application](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-app-registration) in the [Azure Portal](https://portal.azure.com). Ensure that the application is enabled for the [authorization code flow with PKCE](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow). This will require that you redirect URI configured in the portal is of type `SPA`.
-1. Clone this repository `git clone https://github.com/Azure-Samples/ms-identity-javascript-react-spa.git`
+1. Clone this repository `https://github.com/gustavoabell/react-spa-example`
 1. Open the [/src/authConfig.js](./src/authConfig.js) file and provide the required configuration values.
 1. On the command line, navigate to the root of the repository, and run `npm install` to install the project dependencies via npm.
 
@@ -57,17 +57,3 @@ This sample demonstrates the following MSAL React concepts:
    2. Replace the string `"Enter_the_Graph_Endpoint_Herev1.0/me"` with `"https://graph.microsoft.com/v1.0/me"` (*note*: This is for MS Graph instance located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/en-us/graph/deployments))
 3. To start the sample application, run `npm start`.
 4. Finally, open a browser and navigate to [http://localhost:3000](http://localhost:3000).
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit <https://cla.opensource.microsoft.com>.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
