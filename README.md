@@ -42,7 +42,7 @@ This sample demonstrates the following MSAL React concepts:
 ### Setup
 
 1. [Register a new application](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-app-registration) in the [Azure Portal](https://portal.azure.com). Ensure that the application is enabled for the [authorization code flow with PKCE](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow). This will require that you redirect URI configured in the portal is of type `SPA`.
-1. Clone this repository `git clone https://github.com/Azure-Samples/ms-identity-javascript-react-spa.git`
+1. Clone this repository `https://github.com/gustavoabell/react-spa-example`
 1. Open the [/src/authConfig.js](./src/authConfig.js) file and provide the required configuration values.
 1. On the command line, navigate to the root of the repository, and run `npm install` to install the project dependencies via npm.
 
