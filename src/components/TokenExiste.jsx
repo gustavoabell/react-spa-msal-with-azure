@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import { useMsal } from "@azure/msal-react";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/esm/Dropdown";
@@ -14,6 +15,6 @@ export const TokenExiste = () => {
       }
   
   return (
-      <button variant="secondary" onClick={handleSubmit}>Verificar Token</button>
+      <Button variant="secondary" onClick={handleSubmit}>Verificar Token</Button>
   )
 }
