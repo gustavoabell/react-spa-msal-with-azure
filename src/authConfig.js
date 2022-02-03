@@ -12,8 +12,14 @@ import { LogLevel } from "@azure/msal-browser";
  */
 export const msalConfig = {
     auth: {
-        clientId: "49e167cb-9619-4420-8429-a1cecc433805",
-        authority: "https://login.microsoftonline.com/92d143fd-f58c-420c-8469-393fab93e1ea",
+        // clientId: "49e167cb-9619-4420-8429-a1cecc433805",
+        
+        clientId: "d3384fcc-82a8-45a5-a658-f7899286b9e4",
+
+        // authority: "https://login.microsoftonline.com/92d143fd-f58c-420c-8469-393fab93e1ea",
+
+        authority: "https://login.microsoftonline.com/23bf0d1a-5e29-4594-8d9b-7dee6c891cab",
+        
         redirectUri: "https://salmon-pond-0d83e150f.1.azurestaticapps.net"
     },
    
